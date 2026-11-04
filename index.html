@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAN-SUNO AI | Every Voice Matters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><nav>
+    <div class="logo">JAN-SUNO <span>AI.</span></div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#report">Report Issue</a>
+        <a href="#track">Track</a>
+    </div>
+    <a href="#report" class="nav-btn">Get Started ↗</a>
+</nav><section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">✦ AI POWERED CIVIC TECHNOLOGY</span>
+        <h1>Your City Deserves Better.<br>
+        <span>Your Voice</span> Makes It Possible.</h1>
+        <p>An intelligent platform that transforms citizen complaints into actionable insights. Report problems in Hindi, English or Hinglish.</p>    <div class="buttons">
+        <a href="#report" class="primary">Report an Issue ↗</a>
+        <a href="#track" class="secondary">Track Complaint →</a>
+    </div>
+
+    <div class="trust">✦ Every voice matters. Every complaint counts.</div>
+</div>
+
+<div class="hero-card">
+    <div class="card-top">● LIVE AI ANALYSIS <span>SMART AI</span></div>
+    <div class="icon">⌖</div>
+    <h2>Issue Identified!</h2>
+    <p>Road Maintenance · Ward 08</p>
+    <hr>
+    <div class="progress"></div>
+    <div class="priority">Suggested Priority <b>HIGH</b></div>
+    <div class="floating">✓ Complaint Successfully Tracked</div>
+</div>
+
+</section><section class="stats">
+    <div><h2 id="total">0</h2><p>Total Complaints</p></div>
+    <div><h2 id="pending">0</h2><p>Pending Issues</p></div>
+    <div><h2 id="resolved">0</h2><p>Resolved Issues</p></div>
+</section><section class="section" id="features">
+    <span class="tag">OUR TECHNOLOGY</span>
+    <h1>Making Complaints <span>Smarter.</span></h1><div class="feature-grid">
+    <div class="feature">
+        <div class="feature-icon">🤖</div>
+        <h3>AI Complaint Analysis</h3>
+        <p>Automatically identifies complaint categories and suggests departments.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🌐</div>
+        <h3>Multilingual Support</h3>
+        <p>Report issues in Hindi, English and Hinglish.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">📍</div>
+        <h3>Smart Tracking</h3>
+        <p>Track your complaint using a unique tracking ID.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Priority Detection</h3>
+        <p>Identify potentially urgent civic problems.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">📊</div>
+        <h3>Analytics Dashboard</h3>
+        <p>Visualize complaints and their resolution status.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🔍</div>
+        <h3>Duplicate Detection</h3>
+        <p>Find potentially similar complaints in the system.</p>
+    </div>
+</div>
+
+</section><section class="report-section" id="report">
+    <div class="report-heading">
+        <span class="tag">RAISE YOUR VOICE</span>
+        <h1>Report a <span>Problem.</span></h1>
+        <p>Tell us what's happening in your neighbourhood.</p>
+    </div><form id="complaintForm">
+    <label>Your Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+
+    <label>Complaint Title</label>
+    <input id="title" type="text" placeholder="e.g. Road damage near school" required>
+
+    <label>Complaint Description</label>
+    <textarea id="description" placeholder="Describe your problem in Hindi, English or Hinglish..." required></textarea>
+
+    <label>Location / Area</label>
+    <input id="location" type="text" placeholder="Enter your area" required>
+
+    <label>Upload Image (Optional)</label>
+    <input id="image" type="file" accept="image/*">
+
+    <button type="submit" class="primary submit">Analyze & Submit Complaint ↗</button>
+</form>
+
+<div id="result" class="result hidden"></div>
+
+</section><section class="track-section" id="track">
+    <span class="tag">COMPLAINT TRACKING</span>
+    <h1>Track Your <span>Complaint.</span></h1>
+    <p>Enter your unique complaint ID below.</p><div class="track-box">
+    <input id="trackingId" placeholder="Enter Complaint ID">
+    <button onclick="trackComplaint()">Track Now →</button>
+</div>
+
+<div id="trackResult"></div>
+
+</section><footer>
+    <div class="logo">JAN-SUNO <span>AI.</span></div>
+    <p>Har Nagrik Ki Awaaz, Ab AI Ke Saath.</p>
+    <small>© 2026 JAN-SUNO AI | Human Impact Hackathon Project</small>
+</footer><script src="script.js"></script></body>
+</html>
